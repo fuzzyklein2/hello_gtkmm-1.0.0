@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mywindow_0',['MyWindow',['../classMyWindow.html',1,'']]]
+  ['exit_0',['Exit',['../structExit.html',1,'']]]
 ];

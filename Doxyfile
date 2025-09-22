@@ -5,8 +5,8 @@ PROJECT_NUMBER         = "1.0"
 OUTPUT_DIRECTORY       = "docs"
 
 # Input files
-INPUT                  = src/hello_gtkmm.cpp
-FILE_PATTERNS          = *.cpp *.h
+INPUT                  = src inc
+FILE_PATTERNS          = *.cpp *.c *.cc *.cp *.h *.hpp *.h
 RECURSIVE              = NO
 
 # Extract everything
