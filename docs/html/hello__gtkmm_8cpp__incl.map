@@ -1,7 +1,11 @@
 <map id="src/hello_gtkmm.cpp" name="src/hello_gtkmm.cpp">
-<area shape="rect" id="Node000001" title="Minimal GTKmm 4 Hello World example with a clickable button." alt="" coords="19,5,161,31"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,79,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,33,60,69,55,66,80,30"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="103,79,175,104"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="100,29,126,66,121,69,96,33"/>
+<area shape="rect" id="Node000001" title="Minimal GTKmm 4 Hello World example with a clickable button." alt="" coords="67,5,210,31"/>
+<area shape="rect" id="Node000002" href="$hello__gtkmm_8h.html" title=" " alt="" coords="85,79,192,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,31,141,65,136,65,136,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,152,77,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="125,106,70,146,67,141,121,102"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="102,152,175,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="141,104,141,138,136,138,136,104"/>
+<area shape="rect" id="Node000005" href="$mywindow_8h.html" title=" " alt="" coords="200,152,293,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="157,102,219,142,216,147,155,106"/>
 </map>

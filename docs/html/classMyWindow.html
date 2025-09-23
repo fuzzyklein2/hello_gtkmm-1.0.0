@@ -99,6 +99,8 @@ $(document).ready(function(){initNavTree('classMyWindow.html',''); initResizable
 
 <p>Main application window for the Hello World example.  
  <a href="classMyWindow.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mywindow_8h_source.html">mywindow.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for MyWindow:</div>
 <div class="dyncontent">
@@ -144,7 +146,7 @@ Private Attributes</h2></td></tr>
 <div class="textblock"><p>Main application window for the Hello World example. </p>
 <p>Inherits from Gtk::Window and contains a single Gtk::Button. Clicking the button prints a message to the terminal. </p>
 
-<p class="definition">Definition at line <a class="el" href="hello__gtkmm_8cpp_source.html#l00019">19</a> of file <a class="el" href="hello__gtkmm_8cpp_source.html">hello_gtkmm.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mywindow_8h_source.html#l00008">8</a> of file <a class="el" href="mywindow_8h_source.html">mywindow.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae0ae4de3a21d55202f428bd6bf5656d9" name="ae0ae4de3a21d55202f428bd6bf5656d9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae0ae4de3a21d55202f428bd6bf5656d9">&#9670;&#160;</a></span>MyWindow()</h2>
@@ -164,22 +166,22 @@ Private Attributes</h2></td></tr>
 <p>Constructs the main window. </p>
 <p>Sets the window title, default size, and initializes the button. Connects the button's "clicked" signal to a callback. </p>
 
-<p class="definition">Definition at line <a class="el" href="hello__gtkmm_8cpp_source.html#l00049">49</a> of file <a class="el" href="hello__gtkmm_8cpp_source.html">hello_gtkmm.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   49</span>                   {</div>
-<div class="line"><span class="lineno">   50</span>    set_title(<span class="stringliteral">&quot;GTKmm Hello World&quot;</span>);</div>
-<div class="line"><span class="lineno">   51</span>    set_default_size(300, 100);</div>
-<div class="line"><span class="lineno">   52</span> </div>
-<div class="line"><span class="lineno">   53</span>    <span class="comment">// Set up the button</span></div>
-<div class="line"><span class="lineno">   54</span>    <a class="code hl_variable" href="classMyWindow.html#a99122f33ce3aa58e97d1159ecd59ab00">button</a>.set_label(<span class="stringliteral">&quot;Click me!&quot;</span>);</div>
-<div class="line"><span class="lineno">   55</span> </div>
-<div class="line"><span class="lineno">   56</span>    <span class="comment">// Connect the clicked signal to our handler</span></div>
-<div class="line"><span class="lineno">   57</span>    <a class="code hl_variable" href="classMyWindow.html#a99122f33ce3aa58e97d1159ecd59ab00">button</a>.signal_clicked().connect(sigc::mem_fun(*<span class="keyword">this</span>, &amp;<a class="code hl_function" href="classMyWindow.html#a2d06ec25f2bb3f7cbdc8da471cf99f14">MyWindow::on_button_clicked</a>));</div>
-<div class="line"><span class="lineno">   58</span> </div>
-<div class="line"><span class="lineno">   59</span>    <span class="comment">// Add the button to the window</span></div>
-<div class="line"><span class="lineno">   60</span>    set_child(<a class="code hl_variable" href="classMyWindow.html#a99122f33ce3aa58e97d1159ecd59ab00">button</a>);</div>
-<div class="line"><span class="lineno">   61</span>}</div>
-<div class="ttc" id="aclassMyWindow_html_a2d06ec25f2bb3f7cbdc8da471cf99f14"><div class="ttname"><a href="classMyWindow.html#a2d06ec25f2bb3f7cbdc8da471cf99f14">MyWindow::on_button_clicked</a></div><div class="ttdeci">void on_button_clicked()</div><div class="ttdoc">Callback function for the button's &quot;clicked&quot; signal.</div><div class="ttdef"><b>Definition</b> <a href="hello__gtkmm_8cpp_source.html#l00063">hello_gtkmm.cpp:63</a></div></div>
-<div class="ttc" id="aclassMyWindow_html_a99122f33ce3aa58e97d1159ecd59ab00"><div class="ttname"><a href="classMyWindow.html#a99122f33ce3aa58e97d1159ecd59ab00">MyWindow::button</a></div><div class="ttdeci">Gtk::Button button</div><div class="ttdoc">The button displayed in the window.</div><div class="ttdef"><b>Definition</b> <a href="hello__gtkmm_8cpp_source.html#l00043">hello_gtkmm.cpp:43</a></div></div>
+<p class="definition">Definition at line <a class="el" href="mywindow_8cpp_source.html#l00003">3</a> of file <a class="el" href="mywindow_8cpp_source.html">mywindow.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">    3</span>                   {</div>
+<div class="line"><span class="lineno">    4</span>    set_title(<span class="stringliteral">&quot;GTKmm Hello World&quot;</span>);</div>
+<div class="line"><span class="lineno">    5</span>    set_default_size(300, 100);</div>
+<div class="line"><span class="lineno">    6</span> </div>
+<div class="line"><span class="lineno">    7</span>    <span class="comment">// Set up the button</span></div>
+<div class="line"><span class="lineno">    8</span>    <a class="code hl_variable" href="classMyWindow.html#a99122f33ce3aa58e97d1159ecd59ab00">button</a>.set_label(<span class="stringliteral">&quot;Click me!&quot;</span>);</div>
+<div class="line"><span class="lineno">    9</span> </div>
+<div class="line"><span class="lineno">   10</span>    <span class="comment">// Connect the clicked signal to our handler</span></div>
+<div class="line"><span class="lineno">   11</span>    <a class="code hl_variable" href="classMyWindow.html#a99122f33ce3aa58e97d1159ecd59ab00">button</a>.signal_clicked().connect(sigc::mem_fun(*<span class="keyword">this</span>, &amp;<a class="code hl_function" href="classMyWindow.html#a2d06ec25f2bb3f7cbdc8da471cf99f14">MyWindow::on_button_clicked</a>));</div>
+<div class="line"><span class="lineno">   12</span> </div>
+<div class="line"><span class="lineno">   13</span>    <span class="comment">// Add the button to the window</span></div>
+<div class="line"><span class="lineno">   14</span>    set_child(<a class="code hl_variable" href="classMyWindow.html#a99122f33ce3aa58e97d1159ecd59ab00">button</a>);</div>
+<div class="line"><span class="lineno">   15</span>}</div>
+<div class="ttc" id="aclassMyWindow_html_a2d06ec25f2bb3f7cbdc8da471cf99f14"><div class="ttname"><a href="classMyWindow.html#a2d06ec25f2bb3f7cbdc8da471cf99f14">MyWindow::on_button_clicked</a></div><div class="ttdeci">void on_button_clicked()</div><div class="ttdoc">Callback function for the button's &quot;clicked&quot; signal.</div><div class="ttdef"><b>Definition</b> <a href="mywindow_8cpp_source.html#l00017">mywindow.cpp:17</a></div></div>
+<div class="ttc" id="aclassMyWindow_html_a99122f33ce3aa58e97d1159ecd59ab00"><div class="ttname"><a href="classMyWindow.html#a99122f33ce3aa58e97d1159ecd59ab00">MyWindow::button</a></div><div class="ttdeci">Gtk::Button button</div><div class="ttdoc">The button displayed in the window.</div><div class="ttdef"><b>Definition</b> <a href="mywindow_8h_source.html#l00032">mywindow.h:32</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -210,10 +212,10 @@ Private Attributes</h2></td></tr>
 <p>Callback function for the button's "clicked" signal. </p>
 <p>Prints a message to standard output when the button is clicked. </p>
 
-<p class="definition">Definition at line <a class="el" href="hello__gtkmm_8cpp_source.html#l00063">63</a> of file <a class="el" href="hello__gtkmm_8cpp_source.html">hello_gtkmm.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   63</span>                                 {</div>
-<div class="line"><span class="lineno">   64</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Button clicked!&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   65</span>}</div>
+<p class="definition">Definition at line <a class="el" href="mywindow_8cpp_source.html#l00017">17</a> of file <a class="el" href="mywindow_8cpp_source.html">mywindow.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   17</span>                                 {</div>
+<div class="line"><span class="lineno">   18</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Button clicked!&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   19</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -240,12 +242,13 @@ Private Attributes</h2></td></tr>
 
 <p>The button displayed in the window. </p>
 
-<p class="definition">Definition at line <a class="el" href="hello__gtkmm_8cpp_source.html#l00043">43</a> of file <a class="el" href="hello__gtkmm_8cpp_source.html">hello_gtkmm.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mywindow_8h_source.html#l00032">32</a> of file <a class="el" href="mywindow_8h_source.html">mywindow.h</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/<a class="el" href="hello__gtkmm_8cpp_source.html">hello_gtkmm.cpp</a></li>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>inc/<a class="el" href="mywindow_8h_source.html">mywindow.h</a></li>
+<li>src/<a class="el" href="mywindow_8cpp_source.html">mywindow.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

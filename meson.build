@@ -13,6 +13,7 @@ inc = include_directories('inc')
 # --- AUTOGEN_SRC_START ---
 src_files = [
   'src/hello_gtkmm.cpp',
+  'src/mywindow.cpp',
 ]
 # --- AUTOGEN_SRC_END ---
 
